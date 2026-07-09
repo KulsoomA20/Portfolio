@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Umme Kulsoom A - Java Full Stack Developer & AI/ML Enthusiast. Expert in Java, Python, SQL, Web Tech, and Machine Learning."
+    />
+    <meta
+      name="keywords"
+      content="Umme Kulsoom A, Portfolio, Java Full Stack, AI/ML, Software Engineer, Web Developer, Tap Academy, Bangalore"
+    />
+    <meta name="author" content="Umme Kulsoom A" />
+    <title>Umme Kulsoom A | Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./developer_avatar.png" type="image/png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Devicon Logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Ambient Background Mesh and Grid Overlay -->
+    <div class="mesh-gradient" id="mesh-gradient"></div>
+
+    <!-- Mobile Sticky Header -->
+    <header class="mobile-header" id="mobile-header">
+      <div class="header-actions">
+        <button
+          id="mobile-menu-toggle"
+          class="mobile-toggle-btn"
+          aria-label="Toggle menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <nav class="mobile-nav" id="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link active">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Split-Screen Container -->
+    <div class="portfolio-container">
+      <!-- LEFT COLUMN: Sticky Sidebar -->
+      <aside class="sidebar-column">
+        <div class="sidebar-scroll-wrapper">
+
+          <!-- Profile / Info Card -->
+          <div class="profile-info">
+            <div class="avatar-glow"></div>
+            <div class="avatar-card">
+              <img
+                src="./developer_avatar.png"
+                alt="Umme Kulsoom A"
+                class="avatar-img"
+              />
+            </div>
+            <h1 class="profile-name">Umme Kulsoom A</h1>
+            <h2 class="profile-title">
+              I am
+              <span
+                class="typewriter"
+                id="typewriter-text"
+                data-words='["a Java Full Stack Developer", "an AI & ML Enthusiast"]'
+              ></span
+              ><span class="cursor">|</span>
+            </h2>
+            <p class="profile-tagline">
+              Building intelligent applications, physical computing systems, and
+              full-stack solutions. AIML graduate & Developer Intern at Tap
+              Academy.
+            </p>
+          </div>
+
+          <!-- Desktop Navigation indicator list -->
+          <nav class="desktop-nav" id="desktop-nav">
+            <ul class="desktop-nav-list">
+              <li>
+                <a href="#about" class="desktop-nav-link active">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">About</span>
+                </a>
+              </li>
+              <li>
+                <a href="#skills" class="desktop-nav-link">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">Skills</span>
+                </a>
+              </li>
+              <li>
+                <a href="#experience" class="desktop-nav-link">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">Experience</span>
+                </a>
+              </li>
+              <li>
+                <a href="#achievements" class="desktop-nav-link">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">Achievements</span>
+                </a>
+              </li>
+              <li>
+                <a href="#projects" class="desktop-nav-link">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">Projects</span>
+                </a>
+              </li>
+              <li>
+                <a href="#education" class="desktop-nav-link">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">Education</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="desktop-nav-link">
+                  <span class="nav-indicator-line"></span>
+                  <span class="nav-indicator-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Sidebar footer / Call-to-actions -->
+          <div class="sidebar-footer">
+            <div class="sidebar-ctas">
+              <a
+                href="./newJava.pdf"
+                target="_blank"
+                class="btn btn-primary"
+                id="btn-view-resume"
+              >
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>View Resume</span>
+              </a>
+              <a
+                download="Umme_Kulsoom_Resume"
+                href="./newJava.pdf"
+                class="btn btn-secondary"
+                id="btn-download-resume"
+              >
+                <i class="fa-solid fa-download"></i>
+                <span>Download</span>
+              </a>
+            </div>
+            <div class="sidebar-socials">
+              <a
+                href="mailto:kulsoom.uaman@gmail.com"
+                class="social-icon"
+                title="Email"
+                id="hero-social-email"
+              >
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/ummekulsooma"
+                target="_blank"
+                class="social-icon"
+                title="LinkedIn"
+                id="hero-social-linkedin"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/KulsoomA20"
+                target="_blank"
+                class="social-icon"
+                title="GitHub"
+                id="hero-social-github"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT COLUMN: Scrollable Content -->
+      <main class="content-column">
+        <!-- About Section -->
+        <section class="content-section" id="about">
+          <h2 class="section-heading">About Me</h2>
+
+          <div class="about-card card">
+            <h3 class="card-heading">My Journey</h3>
+            <p>
+              I am an AI & ML Engineering graduate from the
+              <strong>Cambridge Institute of Technology, Bangalore</strong>,
+              with a CGPA of <strong>9.2</strong>. My educational background
+              combined with hands-on internships has equipped me with a robust
+              understanding of both backend development and intelligent systems.
+            </p>
+            <p>
+              Currently, as a
+              <strong>Java Full Stack Development Intern at Tap Academy</strong
+              >, I am building MVC-based dynamic web applications, utilizing
+              Java, JDBC, Servlets, MySQL, and Apache Tomcat. I love connecting
+              the physical world, software systems, and data analytics to solve
+              real-world problems.
+            </p>
+
+            <div class="stats-row">
+              <div class="stat-box">
+                <span class="stat-number">9.2</span>
+                <span class="stat-desc">B.E. CGPA</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">3+</span>
+                <span class="stat-desc">Internships</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">3+</span>
+                <span class="stat-desc">Featured Projects</span>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="content-section" id="skills">
+          <h2 class="section-heading">Technical Skills</h2>
+
+          <div class="skills-grid">
+            <!-- Programming -->
+            <div class="skills-box card">
+              <div class="skills-box-header">
+                <i class="fa-solid fa-code"></i>
+                <h3>Programming</h3>
+              </div>
+              <ul class="skills-list">
+                <li><i class="devicon-java-plain text-accent"></i> Java</li>
+                <li><i class="devicon-python-plain text-accent"></i> Python</li>
+                <li><i class="devicon-c-plain text-accent"></i> C</li>
+                <li><i class="devicon-cplusplus-plain text-accent"></i> C++</li>
+                <li><i class="devicon-html5-plain text-accent"></i> HTML & CSS</li>
+                <li>
+                  <i class="devicon-javascript-plain text-accent"></i> JavaScript
+                </li>
+              </ul>
+            </div>
+
+            <!-- AI / ML -->
+            <div class="skills-box card">
+              <div class="skills-box-header">
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI & ML</h3>
+              </div>
+              <ul class="skills-list">
+                <li>
+                  <i class="fa-solid fa-microchip text-accent"></i> Machine
+                  Learning
+                </li>
+                <li>
+                  <i class="fa-solid fa-eye text-accent"></i> Computer Vision
+                </li>
+                <li><i class="fa-solid fa-comments text-accent"></i> NLP</li>
+                <li>
+                  <i class="fa-solid fa-wand-magic-sparkles text-accent"></i>
+                  Generative AI
+                </li>
+                <li>
+                  <i class="devicon-pytorch-original text-accent"></i> PyTorch &
+                  DeepLabCut
+                </li>
+              </ul>
+            </div>
+
+            <!-- Web Tech & DB -->
+            <div class="skills-box card">
+              <div class="skills-box-header">
+                <i class="fa-solid fa-server"></i>
+                <h3>Web & Databases</h3>
+              </div>
+              <ul class="skills-list">
+                <li>
+                  <i class="fa-solid fa-server text-accent"></i> Servlets & JSP
+                </li>
+                <li><i class="fa-solid fa-database text-accent"></i> JDBC</li>
+                <li><i class="devicon-mysql-plain text-accent"></i> MySQL</li>
+                <li>
+                  <i class="devicon-tomcat-line text-accent"></i> Apache Tomcat
+                </li>
+                <li><i class="fa-solid fa-gears text-accent"></i> REST APIs</li>
+              </ul>
+            </div>
+
+            <!-- Analytics & IoT -->
+            <div class="skills-box card">
+              <div class="skills-box-header">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Analytics & IoT</h3>
+              </div>
+              <ul class="skills-list">
+                <li>
+                  <i class="fa-solid fa-chart-bar text-accent"></i> Power BI
+                </li>
+                <li>
+                  <i class="fa-solid fa-chart-pie text-accent"></i> Tableau
+                </li>
+                <li>
+                  <i class="devicon-pandas-plain text-accent"></i> Pandas / NumPy
+                </li>
+                <li>
+                  <i class="fa-solid fa-microchip text-accent"></i> ESP32 / IoT
+                </li>
+                <li>
+                  <i class="fa-solid fa-wifi text-accent"></i> MQTT / WebSockets
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="content-section" id="experience">
+          <h2 class="section-heading">Work Experience</h2>
+
+          <div class="timeline">
+            <!-- Timeline 1 -->
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2026 - Present</span>
+                <span class="timeline-badge">Current</span>
+              </div>
+              <h3 class="job-title">Java Full Stack Development Intern</h3>
+              <h4 class="job-company">
+                <i class="fa-solid fa-building"></i> Tap Academy
+              </h4>
+              <ul class="job-bullets">
+                <li>
+                  Working on real-world full stack web development concepts
+                  including frontend design, backend processing, database
+                  integration, and MVC-based application architecture.
+                </li>
+                <li>
+                  Applying Java, JSP, Servlets, JDBC, MySQL, and Apache Tomcat
+                  to build dynamic web applications with secure authentication
+                  and efficient request handling.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Timeline 2 -->
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-date">Apr 2025 - May 2025</span>
+              </div>
+              <h3 class="job-title">
+                Data Processing & Machine Learning Intern
+              </h3>
+              <h4 class="job-company">
+                <i class="fa-solid fa-building"></i> Elevate Labs
+              </h4>
+              <ul class="job-bullets">
+                <li>
+                  Performed data preprocessing, exploratory data analysis (EDA),
+                  and implemented machine learning models including regression,
+                  SVM, clustering, and logistic regression.
+                </li>
+                <li>
+                  Developed an AI-powered Natural Language Processing (NLP)
+                  story generator pipeline using Streamlit for automated content
+                  generation.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Timeline 3 -->
+            <div class="timeline-card card">
+              <div class="timeline-meta">
+                <span class="timeline-date">Sep 2024 - Feb 2025</span>
+              </div>
+              <h3 class="job-title">IoT and Web Development Trainee</h3>
+              <h4 class="job-company">
+                <i class="fa-solid fa-building"></i> Samsung Innovation Campus
+              </h4>
+              <ul class="job-bullets">
+                <li>
+                  Collaborated under industry mentorship to develop an IoT-based
+                  irrigation and soil moisture monitoring system.
+                </li>
+                <li>
+                  Worked on hardware-software integration, testing, sensor
+                  communication, and performance optimization for automated
+                  irrigation workflows.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="content-section" id="achievements">
+          <h2 class="section-heading">Key Achievements</h2>
+          <div class="about-card card">
+            <ul class="highlights-timeline">
+              <li>
+                <div class="highlight-marker"></div>
+                <div class="highlight-text">
+                  <h4>IEEE Competition Winner (KAGADA 2025)</h4>
+                  <p>
+                    Won 2nd Prize at the IEEE Project Presentation Competition
+                    held at UVCE, Bangalore.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="highlight-marker"></div>
+                <div class="highlight-text">
+                  <h4>Hack to Hire Finalist</h4>
+                  <p>
+                    Selected among India's Top 10 Teams at national level and
+                    presented the solution.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="highlight-marker"></div>
+                <div class="highlight-text">
+                  <h4>IEEE Research Publisher</h4>
+                  <p>
+                    Authored and successfully published a conference research
+                    paper in IEEE.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="content-section" id="projects">
+          <h2 class="section-heading">Featured Projects</h2>
+
+          <!-- Category Filters -->
+          <div class="projects-filter-bar">
+            <button class="filter-btn active" data-filter="all" id="filter-all">
+              All
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="fullstack"
+              id="filter-fullstack"
+            >
+              Web / Full Stack
+            </button>
+            <button class="filter-btn" data-filter="aiml" id="filter-aiml">
+              AI / ML
+            </button>
+            <button class="filter-btn" data-filter="iot" id="filter-iot">
+              IoT
+            </button>
+          </div>
+
+          <div class="projects-list" id="projects-grid">
+            <!-- Project 1: MealBuddy -->
+            <article class="project-item card" data-category="fullstack">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="project-meta">
+                  <span class="project-date">Jun 2026 - Jul 2026</span>
+                  <h3 class="project-title">
+                    MealBuddy – Online Food Ordering & Delivery
+                  </h3>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Developed a multi-role enterprise web application (Customer, Merchant, Rider portals) using MVC architecture with Java Servlets, JSP, Maven, and MySQL.
+                </li>
+                <li>
+                  Implemented database-persistent shopping carts, salted BCrypt password hashing, and a host-aware payment gateway with dynamic QR Code checkouts.
+                </li>
+                <li>
+                  Integrated a zero-configuration database gateway to seamlessly toggle between local host environments and cloud database configurations.
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JSP & Servlets</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Apache Tomcat</span>
+                <span class="tech-tag">BCrypt Hashing</span>
+                <span class="tech-tag">Maven</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/KulsoomA20/MealBuddy"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="https://mealbuddy-production-0489.up.railway.app/" target="_blank" class="project-link demo-link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-item card" data-category="fullstack">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="project-meta">
+                  <span class="project-date">Apr 2026 - May 2026</span>
+                  <h3 class="project-title">
+                    Reader’s Lane – E-Commerce Bookstore
+                  </h3>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Developed a full stack e-commerce bookstore application using
+                  Java, JSP, Servlets, JDBC, MySQL, HTML, CSS, and JavaScript
+                  following MVC architecture.
+                </li>
+                <li>
+                  Implemented authentication, session management, cart handling,
+                  and CRUD-based admin functionalities with deployment on Apache
+                  Tomcat Server.
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JSP & Servlets</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Apache Tomcat</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/KulsoomA20/ReadersLane.git"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="https://readerslane-production.up.railway.app/" target="_blank" class="project-link demo-link">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-item card" data-category="aiml">
+              <div class="project-header">
+                <div class="project-icon"><i class="fa-solid fa-cow"></i></div>
+                <div class="project-meta">
+                  <span class="project-date">May 2025 - Dec 2025</span>
+                  <h3 class="project-title">
+                    ML-Driven Livestock Welfare System
+                  </h3>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Created AI system for early detection of lameness and mastitis
+                  in cattle, integrating computer vision and deep learning.
+                </li>
+                <li>
+                  Implemented DeepLabCut+LSTM for Lameness; RGB-image
+                  classification using Mobile-net for Mastitis.
+                </li>
+                <li>
+                  Building a low-cost, scalable deployment pipeline aimed at
+                  real-time monitoring in rural farms.
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">DeepLabCut</span>
+                <span class="tech-tag">LSTM</span>
+                <span class="tech-tag">MobileNet</span>
+                <span class="tech-tag">OpenCV</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://ieeexplore.ieee.org/document/11330461" target="_blank" class="project-link demo-link">
+                  <i class="fa-solid fa-file-invoice"></i> Research Paper
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 4: Speech-to-Text Converter -->
+            <article class="project-item card" data-category="aiml">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fa-solid fa-microphone"></i>
+                </div>
+                <div class="project-meta">
+                  <span class="project-date">Apr 2025 - May 2025</span>
+                  <h3 class="project-title">Speech-to-Text Converter</h3>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Created a Python-based speech recognition system utilizing `speech_recognition` to capture and transcribe audio from microphone inputs and files with 95% accuracy.
+                </li>
+                <li>
+                  Implemented NLP preprocessing including noise reduction, grammar corrections via `language_tool_python`, and custom text formatting using regex.
+                </li>
+                <li>
+                  Automated end-to-end transcription workflows featuring file path validation, grammar mistake detection, and performance accuracy calculations.
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Speech Recognition</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Regex</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/KulsoomA20/Speech-text.git"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 5: Sliding Puzzle Game -->
+            <article class="project-item card" data-category="aiml">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                </div>
+                <div class="project-meta">
+                  <span class="project-date">Oct 2024 - Jan 2025</span>
+                  <h3 class="project-title">Sliding Puzzle Game (1–15)</h3>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Developed an interactive 4x4 sliding tile puzzle game in Python using Pygame, featuring a custom shuffling algorithm that guarantees solvable configurations.
+                </li>
+                <li>
+                  Engineered efficient reset, solve, and undo logic with arrow keys, WASD, and mouse click inputs, reducing event loop input lag by approximately 30%.
+                </li>
+                <li>
+                  Optimized gameplay animations and performance for low-latency response, achieving smooth user interaction across devices at frame rates over 60 FPS.
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pygame</span>
+                <span class="tech-tag">Algorithms</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/KulsoomA20/Sliding-Puzzle.git"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-item card" data-category="iot">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div class="project-meta">
+                  <span class="project-date">Sept 2024 - Feb 2025</span>
+                  <h3 class="project-title">Real-Time Soil Moisture Monitor</h3>
+                </div>
+              </div>
+              <ul class="project-bullets">
+                <li>
+                  Built an IoT-based system using ESP32, soil sensors, and MQTT
+                  for real-time soil monitoring and automated water control.
+                </li>
+                <li>
+                  Integrated WebSocket communication for sub-2s latency and
+                  developed predictive dashboards using weather APIs.
+                </li>
+              </ul>
+              <div class="project-tech">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">IoT Devices</span>
+                <span class="tech-tag">Weather APIs</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/KulsoomA20/Soil-Moisture-Monitoring-System.git"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="content-section" id="education">
+          <h2 class="section-heading">Education</h2>
+
+          <div class="education-timeline">
+            <!-- College -->
+            <div class="education-item card">
+              <span class="edu-date">2022 - 2026</span>
+              <h3 class="edu-title">
+                B.E. in Artificial Intelligence & Machine Learning
+              </h3>
+              <h4 class="edu-school">
+                Cambridge Institute of Technology, Bangalore
+              </h4>
+              <div class="edu-gpa">
+                <span class="gpa-badge"
+                  ><i class="fa-solid fa-star"></i> CGPA: <strong>9.2</strong> /
+                  10</span
+                >
+              </div>
+            </div>
+
+            <!-- PUC -->
+            <div class="education-item card">
+              <span class="edu-date">2020 - 2022</span>
+              <h3 class="edu-title">Pre-University Course (PCMC)</h3>
+              <h4 class="edu-school">
+                St. Charles Women’s PU College, Bangalore
+              </h4>
+              <div class="edu-gpa">
+                <span class="gpa-badge"
+                  ><i class="fa-solid fa-star"></i> Percentage:
+                  <strong>95%</strong></span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="content-section" id="contact">
+          <h2 class="section-heading">Get In Touch</h2>
+
+          <div class="contact-box card">
+            <div class="contact-header">
+              <h3>Let's collaborate on something awesome.</h3>
+              <p>
+                Feel free to reach out for work opportunities, research
+                collaborations, or software inquiries!
+              </p>
+            </div>
+
+            <div class="contact-layout">
+              <div class="contact-sidebar">
+                <div class="contact-item">
+                  <i class="fa-regular fa-envelope"></i>
+                  <div class="contact-detail">
+                    <span>Email me</span>
+                    <a href="mailto:kulsoom.uaman@gmail.com"
+                      >kulsoom.uaman@gmail.com</a
+                    >
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="contact-detail">
+                    <span>Based in</span>
+                    <p>Bangalore, India</p>
+                  </div>
+                </div>
+
+                <div class="contact-mini-map">
+                  <span
+                    ><i class="fa-solid fa-map-pin"></i> Bangalore,
+                    Karnataka</span
+                  >
+                </div>
+              </div>
+
+              <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      required
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      required
+                      placeholder="Your email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label>
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    required
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    required
+                    rows="4"
+                    placeholder="Your message here..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-submit"
+                  id="btn-submit-contact"
+                >
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer inside right column -->
+        <footer class="content-footer">
+          <p class="copyright">© 2026 Umme Kulsoom A. All rights reserved.</p>
+          <p class="credits">Built with HTML & CSS</p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Custom Scripts -->
+    <script src="./script.js"></script>
+  </body>
+</html>
